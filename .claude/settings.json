@@ -1,0 +1,15 @@
+{
+  "projectName": "FreshBuddy",
+  "description": "食品の賞味期限を管理するWebサービス",
+  "language": "ja",
+  "defaultResponseLanguage": "ja",
+  "permissions": {
+    "deny": [
+      "Bash(git commit:*)", // git commitをブロック
+      "Bash(git push:*)", // git pushをブロック
+      "Bash(rm:*)", // 予期せぬファイル削除を防ぐ
+      "Bash(sudo:*)", // sudo系コマンドをブロック
+      "Read(.env.*)" // 環境変数の読み込みを防ぐ
+    ]
+  }
+}
