@@ -232,14 +232,14 @@ FreshBuddyは、バックエンド（Flask REST API）とフロントエンド�
 │  │  - UI/UX (コンポーネント)                       │     │
 │  │  - 状態管理 (React Context / Redux)            │     │
 │  │  - 音声認識 (Web Speech API)                   │     │
-│  │  - API通信 (Axios / Fetch)                     │     │
+│  │  - API通信 (Fetch)                            │     │
 │  └───────────────────────────────────────────────┘     │
 └─────────────────────────────────────────────────────────┘
                             ↕ REST API (JSON)
 ┌─────────────────────────────────────────────────────────┐
 │                  バックエンド (Flask)                     │
 │  ┌───────────────────────────────────────────────┐     │
-│  │  - RESTful API (Flask-RESTful)                │     │
+│  │  - RESTful API (Flask Blueprint)              │     │
 │  │  - 認証 (Flask-JWT-Extended)                   │     │
 │  │  - ORM (SQLAlchemy)                           │     │
 │  │  - バリデーション (Marshmallow)                │     │
@@ -266,7 +266,6 @@ FreshBuddyは、バックエンド（Flask REST API）とフロントエンド�
 - マイクロサービスアーキテクチャに向いている
 
 **主要なFlask拡張**:
-- **Flask-RESTful**: RESTful API構築
 - **Flask-SQLAlchemy**: ORM（データベース操作）
 - **Flask-JWT-Extended**: JWT認証
 - **Flask-Marshmallow**: シリアライゼーション/バリデーション
@@ -302,11 +301,10 @@ FreshBuddyは、バックエンド（Flask REST API）とフロントエンド�
 
 **主要ライブラリ**:
 - **React Router**: ルーティング
-- **Axios**: HTTP通信
+- **Fetch API**: HTTP通信（ブラウザ標準、追加依存なし）
 - **React Query (TanStack Query)**: サーバーステート管理
 - **React Hook Form**: フォーム管理
 - **Tailwind CSS**: CSSフレームワーク
-- **Headless UI**: アクセシブルなUIコンポーネント
 - **date-fns**: 日付操作
 
 #### **ビルドツール: Vite**
