@@ -83,7 +83,7 @@ docker-compose up
 
 本プロジェクトは、バックエンドとフロントエンドを分離したモノレポ構成を採用します：
 
-```
+```text
 FreshBuddy/
 ├── backend/              # Flaskバックエンド
 │   ├── app/
@@ -152,7 +152,7 @@ FreshBuddy/
 
 ## 参考リンク
 
-- 要件定義書: `docs/requirements.md`
+- 要件定義書: [`docs/requirements.md`](docs/requirements.md)
 - Flask公式ドキュメント: https://flask.palletsprojects.com/
 - React公式ドキュメント: https://react.dev/
 - TypeScript公式ドキュメント: https://www.typescriptlang.org/

@@ -237,7 +237,6 @@ pnpm-debug.log*
 .env.production.local
 
 # Editor directories and files
-.DS_Store
 *.local
 
 # ============================================
